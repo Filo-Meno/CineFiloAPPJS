@@ -30,7 +30,7 @@ app.use(myconn(mysql, dbConfig, 'single'));
 
 app.use('/cineapp', routes);
 
-app.use('/cineapp', express.static('resources/images'))
+
 
 app.listen(app.get('port'), ()=>{
     console.log('Server running on port', app.get('port'));
